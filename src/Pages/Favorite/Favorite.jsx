@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styles from "../../components/Popular/Popular.module.css";
 import { NavLink } from "react-router-dom";
-import { removeFromFavorite } from "../../features";
+import { removeFromFavorite } from "../../Features/Features";
 const Favorite = () => {
   const getFavoriteItems = useSelector((state) => state.favorite.favoriteItems);
 

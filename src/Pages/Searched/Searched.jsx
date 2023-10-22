@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import styles from "../../components/Popular/Popular.module.css";
 import { useDispatch } from "react-redux";
-import { addToFavorite } from "../../features";
+import { addToFavorite } from "../../Features/Features";
 import Loader from "../../components/Loader/Loader";
 
 const Searched = () => {
@@ -26,7 +26,7 @@ const Searched = () => {
         throw Error("Something went wrong. Try again..");
       }
       const result = await data.json();
-      console.log(result.results);
+      // console.log(result.results);
 
       if (result.results.length === 0) {
         throw Error("No recipe found.");

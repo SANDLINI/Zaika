@@ -11,7 +11,6 @@ const Navbar = () => {
   };
 
   const favoriteItems = useSelector((state) => state.favorite.favoriteItems);
-  // console.log(favoriteItems.length)
 
   return (
     <div className={styles.navContainer}>
@@ -19,7 +18,7 @@ const Navbar = () => {
         Home
       </NavLink>
       <NavLink to="/favorite" style={activeNavlink} className={styles.navlink}>
-        Favorite {favoriteItems.length >= 1 ? ((favoriteItems.length)) : " "}
+        Favorite {favoriteItems.length >= 1 ? favoriteItems.length : " "}
       </NavLink>
     </div>
   );

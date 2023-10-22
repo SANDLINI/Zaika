@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Popular.module.css";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addToFavorite } from "../../features";
+import { addToFavorite } from "../../Features/Features";
 import Loader from "../Loader/Loader";
 const Popular = () => {
   const [popular, setPopular] = useState([]);
