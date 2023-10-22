@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import styles from "../../components/Popular/Popular.module.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToFavorite } from "../../Features/Features";
 import Loader from "../../components/Loader/Loader";
 
 const Searched = () => {
   const [searchRecipe, setSearchRecipe] = useState([]);
+  const searchItems = useSelector((state) => state.favorite.favoriteItems);
+  
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -73,6 +75,7 @@ const Searched = () => {
                   </h4>
                 </NavLink>
                 <button
+                  disabled={searchItems.find((item) => item.id === recipe.id)}
                   className={styles.btn}
                   onClick={() => {
                     addToFavoriteBtnHandler(recipe);
