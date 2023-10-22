@@ -1,9 +1,7 @@
-import React from 'react'
-
+import React from "react";
+import styles from "./ErrorPage.module.css";
 const ErrorPage = () => {
-  return (
-    <div>ErrorPage</div>
-  )
-}
+  return <h2 className={styles.error}>Error Not Found</h2>;
+};
 
-export default ErrorPage
+export default ErrorPage;

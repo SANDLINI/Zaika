@@ -13,7 +13,8 @@
 
 .cardContainer {
   display: flex;
-  width: 90%;
+  width: 100%;
+  padding: 20px 10%;
   margin: 30px auto;
   justify-content: center;
   align-items: center;
@@ -26,7 +27,8 @@
   height: auto;
   padding: 5px;
   border-radius: 10px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transition: 0.3s;
 }
 

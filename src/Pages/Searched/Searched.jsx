@@ -8,7 +8,6 @@ import Loader from "../../components/Loader/Loader";
 const Searched = () => {
   const [searchRecipe, setSearchRecipe] = useState([]);
   const searchItems = useSelector((state) => state.favorite.favoriteItems);
-  
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
