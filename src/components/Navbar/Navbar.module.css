@@ -1,5 +1,7 @@
 .navContainer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   padding: 20px;
   position: fixed;
@@ -14,4 +16,8 @@
   color: white;
   font-size: 20px;
   padding: 10px;
+}
+.icon {
+  padding-top: 3px;
+  color: red;
 }

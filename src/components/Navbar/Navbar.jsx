@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { useSelector } from "react-redux";
-
+import { AiFillHeart } from "react-icons/ai";
 const Navbar = () => {
   const activeNavlink = ({ isActive }) => {
     return {
@@ -18,7 +18,8 @@ const Navbar = () => {
         Home
       </NavLink>
       <NavLink to="/favorite" style={activeNavlink} className={styles.navlink}>
-        Favorite {favoriteItems.length >= 1 ? favoriteItems.length : " "}
+        <AiFillHeart className= {styles.icon}  /> <span></span>
+        { favoriteItems.length >= 1 ? favoriteItems.length : " "}
       </NavLink>
     </div>
   );
