@@ -6,10 +6,12 @@ import Favorite from "./Pages/Favorite/Favorite";
 import Searched from "./Pages/Searched/Searched";
 import Recipe from "./Pages/Recipe/Recipe";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
+import './App.css'
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <>
+    <div className= 'main'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,7 +20,8 @@ const App = () => {
         <Route path="/recipe/:name" element={<Recipe />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </>
+      {/* <Footer/> */}
+    </div>
   );
 };
 

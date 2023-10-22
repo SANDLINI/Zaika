@@ -1,11 +1,17 @@
 .navContainer {
   text-align: center;
-  background-color: burlywood;
-  padding: 10px;
+  background-color: black;
+  padding: 20px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100vw;
+  
 }
 
 .navlink {
   text-decoration: none;
+  color: white;
   font-size: 20px;
   padding: 10px;
 }

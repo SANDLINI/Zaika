@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
   const activeNavlink = ({ isActive }) => {
     return {
-      color: isActive ? "Blue" : "Black",
+      color: isActive ? "Blue" : "white",
     };
   };
 

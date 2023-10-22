@@ -58,9 +58,7 @@ const Popular = () => {
       )}
       {!loading & !error ? (
         <>
-          <div>
-            <h2 className={styles.popular}>Popular Dishes</h2>
-          </div>
+       
           <div className={styles.cardContainer}>
             {popular.map((recipe) => {
               return (
