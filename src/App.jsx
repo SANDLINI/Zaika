@@ -7,7 +7,6 @@ import Searched from "./Pages/Searched/Searched";
 import Recipe from "./Pages/Recipe/Recipe";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import './App.css'
-import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -20,7 +19,7 @@ const App = () => {
         <Route path="/recipe/:name" element={<Recipe />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      {/* <Footer/> */}
+      
     </div>
   );
 };
