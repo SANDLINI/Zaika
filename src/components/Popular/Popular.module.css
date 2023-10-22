@@ -1,0 +1,61 @@
+.error {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popular {
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+.cardContainer {
+  display: flex;
+  width: 90%;
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  width: 230px;
+  height: auto;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  margin: 6px 0;
+}
+
+.btn {
+  padding: 5px;
+  background-color: burlywood;
+  text-align: center;
+  border: none;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}

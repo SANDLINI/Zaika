@@ -1,0 +1,48 @@
+@keyframes loader {
+  0% {
+    background-color: red;
+  }
+
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: aqua;
+  }
+
+  100% {
+    background-color: darkmagenta;
+  }
+}
+
+.loaderContainer {
+  height: 50vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.loader1,
+.loader2,
+.loader3,
+.loader4 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.loader1 {
+  animation: loader 2s 0.1s infinite;
+}
+.loader2 {
+  animation: loader 2s 0.2s infinite;
+}
+.loader3 {
+  animation: loader 2s 0.3s infinite;
+}
+.loader4 {
+  animation: loader 2s 0.4s infinite;
+}

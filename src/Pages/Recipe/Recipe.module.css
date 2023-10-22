@@ -1,0 +1,58 @@
+.error {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.recipeBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.imageBox {
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.imageBox:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 330px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.instructions {
+  width: 350px;
+  padding: 20px;
+  line-height: 35px;
+}
+
+.title {
+  margin: 10px 0;
+}
+
+.summaryHeading {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 35px;
+}
+
+.summary {
+  width: 80%;
+  line-height: 35px;
+  margin: 20px auto;
+}
