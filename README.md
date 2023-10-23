@@ -16,4 +16,4 @@ https://sandlini-zaika.netlify.app
 
 
 <!-- ./public/logo.png -->
-<img src = "./public/logo.png" />
+<img src = "./public/HomePage.png" />
