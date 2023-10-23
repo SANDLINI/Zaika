@@ -1,4 +1,4 @@
-# Project Title
+# ZAIKA
 
 A food recipe finder website where user can search for any food recipe of their choice and check their recipe. 
 
@@ -15,5 +15,5 @@ https://sandlini-zaika.netlify.app
 - Detailed Description
 
 
-<!-- ./public/logo.png -->
+## Screenshot of the project
 <img src = "./public/HomePage.png" />
