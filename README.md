@@ -1,4 +1,4 @@
-# ZAIKA
+# Zaika
 
 A food recipe finder website where user can search for any food recipe of their choice and check their recipe. 
 
